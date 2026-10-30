@@ -1,0 +1,9 @@
+Build a single exertbale real time cv application that integrates camerai processing, two and landmark analysis, facial emotion in. and a limited asl/fsl
+
+task 1 - live cv pipeline. Initialize camera wit hfallback and gfrraceful failure . overlay timestamp, framze size, and movirng average fps compupute over at least 15 frames. detect up tpo 2 hnadand face with fcleaar status when none are detected. implement keyuboard controls: mode switch, reset session, export and quit without crashing. 
+
+task 2 quatntiutive hand tracking. identify lkeft/right hands and use normalized landmark coordinates. implement eulidean  ginertip.palm distance and an angle from three landmarks using cvector dot products; dispkay both. reconize at least four explicitly defined hand poses with computed rules or approced classifier 
+implement a 5_ frqame stability filter,m reject undertain poses and timesamp accepted events. 
+
+task 3 emotion monitoring. run an approved pretrained emotion classifier; display cl;ass and its confidence. face detection alone does not count. apply temporal smoothing and confidence threshold; visibly label lowcodidence predictions as uncertain. displkay session duration, valid sample count, emotion counts/percentages, dominan class and mean confidence. export per observations csv plus aggregate csv/json on command. 
+Task 4. limited askl/fsl interface implement distinct asl and fsl modes with onscreen active mode indicator. recognize athleast 3 validated predefined signs per langugage, using provided/approveed reference mappings or pretrained mode; label unsupported signs as unknown. support two hand lanfmark input and correct missing-hand behavior for sigfns requiring two hands. accept a sign only after stabilityuy; add cooldown to presvent repeated riggering. append recognized sign and timestamp to text history to produce laptop spech via approved tts package
